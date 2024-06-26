@@ -1,7 +1,0 @@
-server:
-  port: ${CUSTOM.SERVER.PORT:9010}
-
-spring:
-  data:
-    mongodb:
-      uri: mongodb://licencias:licencias@localhost:27017/licencias?authSource=admin
