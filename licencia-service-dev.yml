@@ -1,0 +1,7 @@
+server:
+  port: ${CUSTOM.SERVER.PORT:9011}
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://hjara:hjara@localhost:27017/licenciasdb?authSource=admin
