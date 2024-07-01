@@ -5,3 +5,17 @@ spring:
   data:
     mongodb:
       uri: mongodb://hjara:hjara@localhost:27017/licenciasdb?authSource=admin
+
+#Actuator configuration
+info:
+  app:
+    name: Licencia Service 
+    description: Módulo de la arquitectura de Microservicios que disponibiliza la información de las licencias
+    version: 0.0.1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        base-path: /actuator
