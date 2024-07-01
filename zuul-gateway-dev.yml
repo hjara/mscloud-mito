@@ -15,7 +15,7 @@ eureka:
 
 zuul: 
   routes:
-    products:
+    licencia:
       serviceId: licencia-service
       path: /api/licencias/licencia/**
     security:      
@@ -24,4 +24,4 @@ zuul:
       sensitiveHeaders: Cookie,Set-Cookie
     users:
       serviceId: user-service
-      path: /api/licencias/user/**
+      path: /api/licencias/users/**
