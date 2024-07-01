@@ -1,0 +1,27 @@
+# Cloud Gateway Routes
+spring:
+  cloud:
+    gateway:
+      routes:        
+
+        - id: user-service-route
+          uri: lb://user-service # http://service1.com, http://service2.com
+          predicates:
+            - Path=/api/licencias/user-service/**
+          filters:
+            - StripPrefix=3
+
+        - id: licencia-service-route
+          uri: lb://licencia-service # http://service1.com, http://service2.com
+          predicates:
+            - Path=/api/licencias/licencia-service/**
+          filters:
+            - StripPrefix=3
+     
+# Actuator configuration         
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        base-path: /actuator
