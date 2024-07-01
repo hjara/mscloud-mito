@@ -1,0 +1,27 @@
+server:
+  port: ${CUSTOM.SERVER.PORT:8090}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
+    #     Habilitando la gestión de los estados del microservicio. healthcheck.enabled:true
+    healthcheck:
+      enabled: true
+    refresh:
+      enable: true
+
+zuul: 
+  routes:
+    products:
+      serviceId: licencia-service
+      path: /api/licencias/licencia/**
+    security:      
+      serviceId: oauth-server
+      path: /api/security/**
+      sensitiveHeaders: Cookie,Set-Cookie
+    users:
+      serviceId: user-service
+      path: /api/licencias/user/**
