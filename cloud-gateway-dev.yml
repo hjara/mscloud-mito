@@ -10,16 +10,16 @@ spring:
         - id: user-service-route
           uri: lb://user-service # http://service1.com, http://service2.com
           predicates:
-            - Path=/api/licencias/user-service/**
+            - Path=/api/user-service/**
           filters:
-            - StripPrefix=3
+            - StripPrefix=2
 
         - id: licencia-service-route
           uri: lb://licencia-service # http://service1.com, http://service2.com
           predicates:
-            - Path=/api/licencias/licencia-service/**
+            - Path=/api/licencia-service/**
           filters:
-            - StripPrefix=3
+            - StripPrefix=2
      
 # Actuator configuration         
 management:
