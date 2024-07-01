@@ -19,3 +19,11 @@ management:
       exposure:
         include: '*'
         base-path: /actuator
+
+#OpenAPI configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+    enabled: true
+  swagger-ui:
+    enabled: true
