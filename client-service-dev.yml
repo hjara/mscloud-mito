@@ -1,0 +1,55 @@
+server:
+  port: 9030
+
+#Actuator configuration
+info:
+  app:
+    name: Client Service OpenFeign
+    description: Cliente con OpenFeign
+    version: 0.0.1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        base-path: /actuator
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      licencia-service-cb:
+        slidingWindowSize: 12
+        failureRateThreshold: 40
+        waitDurationInOpenState: 10
+        permittedNumberOfCallsInHalfOpenState: 8
+        slowCallRateThreshold: 20
+        slowCallDurationThreshold: 500ms
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+      user-service-cb:
+        slidingWindowSize: 12
+        failureRateThreshold: 40
+        waitDurationInOpenState: 10
+        permittedNumberOfCallsInHalfOpenState: 8
+        slowCallRateThreshold: 20
+        slowCallDurationThreshold: 500ms
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+    instances:
+      licencias-licencia: # Nombre a mapear dentro del @CircuitBreaker
+        base-config: licencia-service-cb
+      licencias-user:
+        base-config: user-service-cb      
+
+
+  timelimiter:
+    configs:
+      licencia-service-tl:
+        timeoutDuration: 1s
+    instances:
+      licencias-product-tl:
+        base-config: licencia-service-tl
+
+
+
+
+
