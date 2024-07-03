@@ -1,6 +1,25 @@
 server:
   port: ${CUSTOM.SERVER.PORT:9080}
 
+# Circuitbreaker
+resilience4j:
+  circuitbreaker:
+    configs:
+      licencia-service-cb:
+        slidingWindowSize: 12
+        failureRateThreshold: 40
+        waitDurationInOpenState: 20
+        permittedNumberOfCallsInHalfOpenState: 8
+        slowCallRateThreshold: 20
+        slowCallDurationThreshold: 500ms
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+
+    instances:
+      licencias-licencia: # Nombre a mapear dentro del @CircuitBreaker
+        base-config: licencia-service-cb
+   
+
+
 # Cloud Gateway Routes
 spring:
   cloud:
@@ -21,6 +40,9 @@ spring:
           filters:
             - StripPrefix=2
             - name: CircuitBreaker
+              args:
+                name: licencias-licencia
+                statuscodes: 400,401,403,500,503,504
      
 # Actuator configuration         
 management:
