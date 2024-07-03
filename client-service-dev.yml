@@ -35,9 +35,9 @@ resilience4j:
         slowCallDurationThreshold: 500ms
         automaticTransitionFromOpenToHalfOpenEnabled: true
     instances:
-      licencias-licencia: # Nombre a mapear dentro del @CircuitBreaker
+      namecb-licencia: # Nombre a mapear dentro del @CircuitBreaker
         base-config: licencia-service-cb
-      licencias-user:
+      namecb-user:
         base-config: user-service-cb      
 
 
