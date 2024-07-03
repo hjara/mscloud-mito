@@ -20,7 +20,7 @@ spring:
             - Path=/api/licencia-service/**
           filters:
             - StripPrefix=2
-          -name: CircuitBreaker
+            - name: CircuitBreaker
      
 # Actuator configuration         
 management:
