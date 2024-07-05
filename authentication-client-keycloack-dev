@@ -1,0 +1,18 @@
+server:
+  port: 9099
+
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          licencia-realm:
+            issuer-uri: http://localhost:8080/realms/licencia-realm
+        registration:
+          licencia-realm:
+            provider: licencia-realm
+            client-name: licencia-keycloack-client
+            client-id: licencia-keycloack-client
+            client-secret: HCqj6Fo7e5UaZTzSCvJlge6KRnayOFs3
+            scope: openid
+            authorization-grant-type: authorization_code
