@@ -1,0 +1,13 @@
+server:
+  port: 9088
+
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://hjara:hjara@localhost:27017/licenciasdb?authSource=admin
+licencia:
+  security:
+    client: licenciaClient
+    secret: licenciaSecret
+    key: licenciaKey
