@@ -6,6 +6,6 @@ spring:
     mongodb:
       uri: mongodb://hjara:hjara@localhost:27017/licenciasdb?authSource=admin
 
-mitocode:
+licencia:
   security:
     key: $2a$10$mdr.WAOykqVGJFDsnU6hoek3qwOCkYQSxea6Cc8Trfh0X/khLUFUS
