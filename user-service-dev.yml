@@ -5,3 +5,11 @@ spring:
   data:
     mongodb:
       uri: mongodb://hjara:hjara@localhost:27017/licenciasdb?authSource=admin
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        base-path: /actuator
