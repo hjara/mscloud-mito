@@ -46,7 +46,7 @@ resilience4j:
       licencia-service-tl:
         timeoutDuration: 1s
     instances:
-      licencias-product-tl:
+      licencias-licencia-tl:
         base-config: licencia-service-tl
 
 
