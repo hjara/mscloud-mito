@@ -20,6 +20,19 @@ management:
         include: '*'
         base-path: /actuator
 
+  tracing:
+    sampling:
+      probability: 1.0
+
+# Logging Configuration
+logging:
+  level:
+    org:
+      springframework:
+        web: ALL   
+
+        
+
 #OpenAPI configuration
 springdoc:
   api-docs:
