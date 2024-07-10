@@ -1,5 +1,5 @@
 server:
-  port: ${CUSTOM.SERVER.PORT:9011}
+  port: ${CUSTOM.SERVER.PORT:9020}
 
 
 ### Mongo database configuration
