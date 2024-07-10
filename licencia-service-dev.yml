@@ -1,6 +1,8 @@
 server:
   port: ${CUSTOM.SERVER.PORT:9011}
 
+
+### Mongo database configuration
 spring:
   data:
     mongodb:
@@ -30,9 +32,7 @@ logging:
     org:
       springframework:
         web: ALL   
-
-        
-
+      
 #OpenAPI configuration
 springdoc:
   api-docs:
@@ -40,3 +40,4 @@ springdoc:
     enabled: true
   swagger-ui:
     enabled: true
+    path: /openapi.yml
