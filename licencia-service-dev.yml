@@ -25,6 +25,9 @@ management:
   tracing:
     sampling:
       probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: ${ZIPKIN.SERVER.HOSTNAME:http://localhost:9411/api/v2/spans}
 
 # Logging Configuration
 logging:
@@ -41,4 +44,10 @@ springdoc:
   swagger-ui:
     enabled: false
     path: /openapi.yml
-    
+
+# Kafka Configuration
+licencia:
+  kafka:
+    serverHost: ${KAFKA.SERVER.HOSTNAME:127.0.0.1}
+    serverPort: 9092
+    topicName: licencia
