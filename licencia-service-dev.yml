@@ -21,7 +21,6 @@ management:
       exposure:
         include: '*'
         base-path: /actuator
-
   tracing:
     sampling:
       probability: 1.0
@@ -45,9 +44,4 @@ springdoc:
     enabled: false
     path: /openapi.yml
 
-# Kafka Configuration
-licencia:
-  kafka:
-    serverHost: ${KAFKA.SERVER.HOSTNAME:127.0.0.1}
-    serverPort: 9092
-    topicName: licencia
+
