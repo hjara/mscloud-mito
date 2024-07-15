@@ -50,6 +50,13 @@ resilience4j:
         base-config: licencia-service-tl
 
 
-
+#OpenAPI configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /openapi.yml
 
 
