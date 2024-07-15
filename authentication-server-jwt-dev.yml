@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://hjara:hjara@localhost:27018/licenciasdb?authSource=admin
+      uri: mongodb://hjara:hjara@localhost:27017/licenciasdb?authSource=admin
 
 licencia:
   security:
