@@ -42,6 +42,23 @@ spring:
                 name: namecb-licencia
                 statuscodes: 400,401,403,500,503,504
                 fallbackUri: forward:/api/user-service/api/licencias/user
+
+
+
+        - id: licencia-query-service-route
+          uri: lb://licencia-query-service # http://service1.com, http://service2.com
+          predicates:
+            - Path=/api/licencia-query-service/**
+          filters:
+            - StripPrefix=2
+            - LicenciaFilter= LicenciaKey,LicenciaValue,CustomKey
+            - name: CircuitBreaker
+              args:
+                name: namecb-licencia-query
+                statuscodes: 400,401,403,500,503,504
+                fallbackUri: forward:/api/user-service/api/licencias/user
+
+                
      
 # Actuator configuration         
 management:
