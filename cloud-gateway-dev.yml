@@ -52,6 +52,13 @@ spring:
           filters:
             - StripPrefix=2          
 
+
+        - id: licencia-command-service-route
+          uri: lb://licencia-command-service # http://service1.com, http://service2.com
+          predicates:
+            - Path=/api/licencia-command-service/**
+          filters:
+            - StripPrefix=2                
                 
      
 # Actuator configuration         
