@@ -17,8 +17,7 @@ zuul:
   routes:
     licencia:
       serviceId: licencia-service
-      #path: /api/licencias/licencia/**
-      path: /api/query/licencia/**
+      path: /api/licencias/licencia/**
     security:      
       serviceId: oauth-server
       path: /api/security/**
