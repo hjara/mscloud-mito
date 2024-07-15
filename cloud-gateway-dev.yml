@@ -51,7 +51,7 @@ spring:
             - Path=/api/licencia-query-service/**
           filters:
             - StripPrefix=2
-            - LicenciaFilter= LicenciaKey,LicenciaValue,CustomKey
+            - LicenciaFilter= LicenciaKey1,LicenciaValue1,CustomKey1
             - name: CircuitBreaker
               args:
                 name: namecb-licencia-query
