@@ -50,13 +50,7 @@ spring:
           predicates:
             - Path=/api/licencia-query-service/**
           filters:
-            - StripPrefix=2
-            - LicenciaFilter= LicenciaKey1,LicenciaValue1,CustomKey1
-            - name: CircuitBreaker
-              args:
-                name: namecb-licencia-query
-                statuscodes: 400,401,403,500,503,504
-                fallbackUri: forward:/api/user-service/api/licencias/user
+            - StripPrefix=2          
 
                 
      
