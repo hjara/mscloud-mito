@@ -69,9 +69,14 @@ management:
         include: '*'
         base-path: /actuator
 
+# Zipkin configuration   
   tracing:
     sampling:
       probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: ${ZIPKIN.SERVER.HOSTNAME:http://localhost:9411/api/v2/spans}
+
 
 # Logging Configuration
 logging:
