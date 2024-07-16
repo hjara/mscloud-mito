@@ -1,11 +1,11 @@
 server:
   port: ${CUSTOM.SERVER.PORT:9010}
-
+  
+### Mongo database configuration
 spring:
   data:
     mongodb:
-      uri: mongodb://hjara:hjara@localhost:27017/licenciasdb?authSource=admin
-
+      uri: ${MONGODB.URL.CONNECTION:mongodb://hjara:hjara@localhost:27017/licenciasdb?authSource=admin}
 
 management:
   endpoints:
