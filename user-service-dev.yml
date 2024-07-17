@@ -6,7 +6,6 @@ spring:
   data:
     mongodb:
       uri: ${MONGODB.URL.CONNECTION:mongodb://hjara:hjara@localhost:27017/licenciasdb?authSource=admin}
-      #uri: mongodb://hjara:hjara@mongo-service:27017/licenciasdb?authSource=admin
 
 management:
   endpoints:
