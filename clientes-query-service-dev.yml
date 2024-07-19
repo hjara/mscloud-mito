@@ -45,3 +45,10 @@ springdoc:
     enabled: false 
     path: /openapi.yml
     # http://127.0.0.1:9020/swagger-ui/index.html
+
+# Kafka Configuration
+licencia:
+  kafka:
+    serverHost: ${KAFKA.SERVER.HOSTNAME:127.0.0.1}
+    serverPort: 9092
+    topicName: licencia
