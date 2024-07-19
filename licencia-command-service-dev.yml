@@ -1,5 +1,5 @@
 server:
-  port: ${CUSTOM.SERVER.PORT:9920}
+  port: ${CUSTOM.SERVER.PORT:9021}
 
 ### Mongo database configuration
 spring:
