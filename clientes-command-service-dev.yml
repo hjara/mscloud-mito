@@ -11,8 +11,8 @@ spring:
 #Actuator configuration
 info:
   app:
-    name: Clientes Service 
-    description: Módulo de la arquitectura de Microservicios que disponibiliza la información de las clientes para la licencia
+    name: Clientes Command Service 
+    description: Módulo de la arquitectura de Microservicios que disponibiliza la información de las clientes para los clientes
     version: 0.0.1
 
 management:
