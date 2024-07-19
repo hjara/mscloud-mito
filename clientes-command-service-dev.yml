@@ -1,0 +1,52 @@
+server:
+  port: ${CUSTOM.SERVER.PORT:9041}
+
+
+### Mongo database configuration
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB.URL.CONNECTION:mongodb://hjara:hjara@localhost:27017/licenciasdb?authSource=admin}
+
+#Actuator configuration
+info:
+  app:
+    name: Clientes Service 
+    description: Módulo de la arquitectura de Microservicios que disponibiliza la información de las clientes para la licencia
+    version: 0.0.1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        base-path: /actuator
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: ${ZIPKIN.SERVER.HOSTNAME:http://localhost:9411/api/v2/spans}
+
+# Logging Configuration
+logging:
+  level:
+    org:
+      springframework:
+        web: ALL   
+      
+#OpenAPI configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+    enabled: false
+  swagger-ui:
+    enabled: false
+    path: /openapi.yml
+
+# Kafka Configuration
+licencia:
+  kafka:
+    serverHost: ${KAFKA.SERVER.HOSTNAME:127.0.0.1}
+    serverPort: 9092
+    topicName: licencia
