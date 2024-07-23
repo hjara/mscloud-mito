@@ -42,6 +42,7 @@ springdoc:
     enabled: true
   swagger-ui:
     enabled: true
+    path: /openapi.yml
 
 
 # Kafka Configuration
