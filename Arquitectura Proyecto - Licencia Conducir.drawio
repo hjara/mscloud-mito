@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" version="24.7.4">
   <diagram name="Proyecto Licencias Conducir" id="NG2mPFjj3fqOwFiLFzsS">
-    <mxGraphModel dx="2537" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2736" dy="816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -98,7 +98,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Dar9Z4Gs7eU9587x_yb5-29" value="&lt;h1&gt;Proyecto Gestión de Licencia de Conducir&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-632" y="129" width="790" height="30" as="geometry" />
+          <mxGeometry x="-632" y="190" width="790" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Dar9Z4Gs7eU9587x_yb5-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.057;entryY=0.408;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
