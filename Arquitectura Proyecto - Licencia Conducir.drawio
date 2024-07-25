@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" version="24.7.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" version="24.7.5">
   <diagram name="Proyecto Licencias Conducir" id="NG2mPFjj3fqOwFiLFzsS">
-    <mxGraphModel dx="2736" dy="816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2284" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -62,7 +62,7 @@
         <mxCell id="Dar9Z4Gs7eU9587x_yb5-18" value="Authentication Server" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="-370" y="679" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="Dar9Z4Gs7eU9587x_yb5-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="CeBpVx-P6-gWmaj8WhjP-4" edge="1" target="23bekRj-kJPtQiSvNsp2-1">
+        <mxCell id="Dar9Z4Gs7eU9587x_yb5-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="CeBpVx-P6-gWmaj8WhjP-4" target="23bekRj-kJPtQiSvNsp2-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="330" y="1167" as="targetPoint" />
             <mxPoint x="260" y="1258" as="sourcePoint" />
@@ -97,7 +97,7 @@
             <mxPoint x="160" y="489" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Dar9Z4Gs7eU9587x_yb5-29" value="&lt;h1&gt;Proyecto Gestión de Licencia de Conducir&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="Dar9Z4Gs7eU9587x_yb5-29" value="&lt;h1&gt;Arquitectura - Gestión de Licencia de Conducir&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-632" y="190" width="790" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Dar9Z4Gs7eU9587x_yb5-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.057;entryY=0.408;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
@@ -201,10 +201,10 @@
         <mxCell id="23bekRj-kJPtQiSvNsp2-2" value="27017" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="265" y="580.5" width="75" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="CeBpVx-P6-gWmaj8WhjP-2" value="Audit Service" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="CeBpVx-P6-gWmaj8WhjP-2" value="Audit Service" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="274" y="763" width="63.5" height="71" as="geometry" />
         </mxCell>
-        <mxCell id="CeBpVx-P6-gWmaj8WhjP-4" value="Audit Service" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="CeBpVx-P6-gWmaj8WhjP-4" value="Audit Service" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="276.5" y="1052.5" width="63.5" height="71" as="geometry" />
         </mxCell>
       </root>
