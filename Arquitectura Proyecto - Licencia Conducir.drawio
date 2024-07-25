@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" version="24.7.4">
   <diagram name="Proyecto Licencias Conducir" id="NG2mPFjj3fqOwFiLFzsS">
-    <mxGraphModel dx="2216" dy="1845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2537" dy="2020" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -143,7 +143,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Dar9Z4Gs7eU9587x_yb5-41" value="&lt;div&gt;Cliente&amp;nbsp;&lt;/div&gt;&lt;div&gt;Query&amp;nbsp;&lt;/div&gt;&lt;div&gt;Service&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="Dar9Z4Gs7eU9587x_yb5-41" value="&lt;div&gt;Clientes &lt;br&gt;&lt;/div&gt;&lt;div&gt;Query&amp;nbsp;&lt;/div&gt;&lt;div&gt;Service&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="132" y="928.5" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="Dar9Z4Gs7eU9587x_yb5-42" value="Commands" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -152,7 +152,7 @@
         <mxCell id="Dar9Z4Gs7eU9587x_yb5-43" value="Querys" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="112" y="867.5" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Dar9Z4Gs7eU9587x_yb5-44" value="Cliente Command Service" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="Dar9Z4Gs7eU9587x_yb5-44" value="Clientes Command Service" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="132" y="567" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="Dar9Z4Gs7eU9587x_yb5-45" value="Licencia Command Service" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
